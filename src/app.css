@@ -1,0 +1,31 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Button.-primary {
+  font-size: 18;
+}
+
+.productContainer {
+  margin: 10;
+  padding: 25;
+  border-width: 1;
+  border-radius: 5;
+  border-color: lightgray;
+}
+
+.productImage {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 32;
+}
+
+.productPrice {
+  font-size: 25;
+  font-weight: bold;
+}
