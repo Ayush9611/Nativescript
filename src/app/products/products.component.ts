@@ -10,6 +10,11 @@ export class ProductsComponent implements OnInit {
   productsapi: any[] = [];
 
   constructor(private http: HttpClient) {}
+
+  getProductDetails(id: Number) {
+    console.log('ID', id);
+  }
+
   ngOnInit() {
     this.http
       .get<any>(

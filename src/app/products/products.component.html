@@ -6,7 +6,8 @@
       <StackLayout
         *ngFor="let product of productsapi"
         class="productContainer"
-        [nsRouterLink]="['/productdetails']"
+        [nsRouterLink]="['/productdetails', product.id]"
+        (tap)="getProductDetails(product.id)"
       >
         <Image
           [src]="product.attributes.ProductImages.data[0].attributes.url"
