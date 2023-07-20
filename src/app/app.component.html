@@ -5,33 +5,7 @@
 <!-- Alloq scroll on the mobile screen -->
 <ScrollView>
   <GridLayout>
-    <page-routeroutlet></page-routeroutlet>
-    <!-- <StackLayout>
-      <Label [text]="myTitle"></Label>
-    </StackLayout>
-  </GridLayout>
+    <page-router-outlet></page-router-outlet>
 
-  <GridLayout>
-    <StackLayout>
-      <StackLayout
-        *ngFor="let product of productsapi"
-        class="productContainer"
-        [nsRouterLink]="['/productdetails']"
-      >
-        <Image
-          [src]="product.attributes.ProductImages.data[0].attributes.url"
-          class="productImage"
-        ></Image>
-        <label [text]="product.attributes.ProductName" class="h1"></label>
-        <label
-          [text]="product.attributes.ProductDescription"
-          textWrap="true"
-        ></label>
-        <label
-          [text]="'$' + product.attributes.Price"
-          class="productPrice"
-        ></label>
-      </StackLayout>
-    </StackLayout> -->
   </GridLayout>
 </ScrollView>

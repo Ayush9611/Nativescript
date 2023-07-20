@@ -6,4 +6,18 @@ import { AnyARecord, AnyMxRecord, AnyNaptrRecord } from 'dns';
   selector: 'ns-products',
   templateUrl: './products.component.html',
 })
-export class ProductsComponent {}
+export class ProductsComponent implements OnInit {
+  productsapi: any[] = [];
+
+  constructor(private http: HttpClient) {}
+  ngOnInit() {
+    this.http
+      .get<any>(
+        'https://starfish-app-ux8rd.ondigitalocean.app/api/products?populate=*'
+      )
+      .subscribe((res) => {
+        console.log(res);
+        this.productsapi = res.data;
+      });
+  }
+}

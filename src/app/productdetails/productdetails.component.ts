@@ -6,4 +6,6 @@ import { AnyARecord, AnyMxRecord, AnyNaptrRecord } from 'dns';
   selector: 'ns-productdetails',
   templateUrl: './productdetails.component.html',
 })
-export class ProductdetailsComponent {}
+export class ProductdetailsComponent {
+
+}

@@ -11,6 +11,7 @@ const routes: Routes = [
   // { path: '', redirectTo: '/items', pathMatch: 'full' },
   // { path: 'items', component: ItemsComponent },
   // { path: 'item/:id', component: ItemDetailComponent },
+  { path: '', component: ProductsComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'productdetails', component: ProductdetailsComponent },
 ];
