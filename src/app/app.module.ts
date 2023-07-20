@@ -6,11 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './item/items.component';
 import { ItemDetailComponent } from './item/item-detail.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   bootstrap: [AppComponent],
   imports: [NativeScriptModule, AppRoutingModule, HttpClientModule],
-  declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
+  declarations: [
+    AppComponent,
+    ItemsComponent,
+    ItemDetailComponent,
+    ProductdetailsComponent,
+    ProductsComponent,
+  ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })

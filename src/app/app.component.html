@@ -5,14 +5,19 @@
 <!-- Alloq scroll on the mobile screen -->
 <ScrollView>
   <GridLayout>
-    <StackLayout>
+    <page-routeroutlet></page-routeroutlet>
+    <!-- <StackLayout>
       <Label [text]="myTitle"></Label>
     </StackLayout>
   </GridLayout>
 
   <GridLayout>
     <StackLayout>
-      <StackLayout *ngFor="let product of productsapi" class="productContainer">
+      <StackLayout
+        *ngFor="let product of productsapi"
+        class="productContainer"
+        [nsRouterLink]="['/productdetails']"
+      >
         <Image
           [src]="product.attributes.ProductImages.data[0].attributes.url"
           class="productImage"
@@ -27,6 +32,6 @@
           class="productPrice"
         ></label>
       </StackLayout>
-    </StackLayout>
+    </StackLayout> -->
   </GridLayout>
 </ScrollView>

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { AnyARecord, AnyMxRecord, AnyNaptrRecord } from 'dns';
 
 @Component({
-  selector: 'ns-productdetails',
-  templateUrl: './productdetails.component.html',
+  selector: 'ns-products',
+  templateUrl: './products.component.html',
 })
-export class ProductdetailsComponent {}
+export class ProductsComponent {}
