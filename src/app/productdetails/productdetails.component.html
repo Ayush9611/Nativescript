@@ -1,6 +1,8 @@
 <ActionBar title="Product Details"></ActionBar>
 <GridLayout>
   <StackLayout>
-    <label text="product details"></label>
+    <label [text]="product.id"></label>
+    <!-- <label [text]="product.attributes.ProductName"></label> -->
+    <!-- <label [text]="product.attributes.Price | currency: 'CAD'"></label> -->
   </StackLayout>
 </GridLayout>
