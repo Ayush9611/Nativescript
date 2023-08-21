@@ -1,6 +1,18 @@
 <ActionBar title="List of my product"></ActionBar>
 
 <ScrollView>
+  <StackLayout>
+    <Image
+      [src]="product.attributes.ProductImages.data[0].attributes.url"
+      class="productImage"
+    ></Image>
+    <Image
+      [src]="product.attributes.ProductImages.data[0].attributes.url"
+      class="productImage"
+    ></Image>
+    <Label text="Account"></Label>
+    
+  </StackLayout>
   <GridLayout>
     <StackLayout>
       <StackLayout
