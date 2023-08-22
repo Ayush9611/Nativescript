@@ -18,22 +18,28 @@
         ></label>
         <Button text="SHOP NOW" class="top-button"></Button>
       </StackLayout>
-      <StackLayout
-        *ngFor="let product of productList"
-        class="productContainer"
-        [nsRouterLink]="['/productdetails', product.id]"
-        (tap)="getProductDetails(product.id)"
-      >
-        <Image
-          [src]="product.attributes.mainImg.data.attributes.url"
-          class="productImage"
-        ></Image>
-        <label [text]="product.attributes.name" class="h1"></label>
-        <label [text]="product.attributes.description" textWrap="true"></label>
-        <label
-          [text]="'$' + product.attributes.price"
-          class="productPrice"
-        ></label>
+      <StackLayout>
+        <Image [src]="topText" class="topText"></Image>
+        <StackLayout
+          *ngFor="let product of productList"
+          class="productContainer"
+          [nsRouterLink]="['/productdetails', product.id]"
+          (tap)="getProductDetails(product.id)"
+        >
+          <Image
+            [src]="product.attributes.mainImg.data.attributes.url"
+            class="productImage"
+          ></Image>
+          <label [text]="product.attributes.name" class="h1"></label>
+          <label
+            [text]="product.attributes.description"
+            textWrap="true"
+          ></label>
+          <label
+            [text]="'$' + product.attributes.price"
+            class="productPrice"
+          ></label>
+        </StackLayout>
       </StackLayout>
     </StackLayout>
   </GridLayout>
