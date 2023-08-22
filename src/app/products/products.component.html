@@ -1,36 +1,37 @@
 <ActionBar title="List of my product"></ActionBar>
 
 <ScrollView>
-  <StackLayout>
-    <!-- <Image
-      [src]="product.attributes.ProductImages.data[0].attributes.url"
-      class="productImage"
-    ></Image>
-    <Image
-      [src]="product.attributes.ProductImages.data[0].attributes.url"
-      class="productImage"
-    ></Image> -->
-    <Label text="Account"></Label>
-  </StackLayout>
   <GridLayout>
     <StackLayout>
       <StackLayout
-        *ngFor="let product of productsapi"
+        [ngStyle]="{
+          'background-image': 'url(' + backgroundImg + ')'
+        }"
+        class="top"
+      >
+        <Image [src]="topImg" class="topImg"></Image>
+        <Image [src]="topText" class="topText"></Image>
+        <label
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun"
+          textWrap="true"
+          class="topDesc"
+        ></label>
+        <Button text="SHOP NOW" class="top-button"></Button>
+      </StackLayout>
+      <StackLayout
+        *ngFor="let product of productList"
         class="productContainer"
         [nsRouterLink]="['/productdetails', product.id]"
         (tap)="getProductDetails(product.id)"
       >
         <Image
-          [src]="product.attributes.ProductImages.data[0].attributes.url"
+          [src]="product.attributes.mainImg.data.attributes.url"
           class="productImage"
         ></Image>
-        <label [text]="product.attributes.ProductName" class="h1"></label>
+        <label [text]="product.attributes.name" class="h1"></label>
+        <label [text]="product.attributes.description" textWrap="true"></label>
         <label
-          [text]="product.attributes.ProductDescription"
-          textWrap="true"
-        ></label>
-        <label
-          [text]="'$' + product.attributes.Price"
+          [text]="'$' + product.attributes.price"
           class="productPrice"
         ></label>
       </StackLayout>

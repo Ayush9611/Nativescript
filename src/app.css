@@ -23,9 +23,36 @@ Button.-primary {
 
 .h1 {
   font-size: 32;
+  color: #fff;
 }
 
 .productPrice {
   font-size: 25;
   font-weight: bold;
+}
+
+ScrollView {
+  background-color: black;
+  color: #fff;
+}
+
+.top {
+  height: 100vh;
+  padding: 150px 50px;
+  background-size: cover;
+}
+
+.topText {
+  margin: 30px 0;
+}
+
+.topDesc {
+  font-size: 20;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.top-button {
+  border-radius: 5px;
+  color: #ff56c9;
 }
