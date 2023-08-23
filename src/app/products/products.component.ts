@@ -150,7 +150,7 @@ export class ProductsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   getProductDetails(id: Number) {
-    console.log('ID', id);
+    // console.log('ID', id);
   }
 
   ngOnInit() {

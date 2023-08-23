@@ -13,11 +13,11 @@ Button.-primary {
   margin: 10;
   padding: 25;
   border-width: 1;
-  border-radius: 5;
+  border-radius: 20;
   border-color: lightgray;
 }
 
-.productImage {
+Image {
   width: 100%;
 }
 
@@ -38,7 +38,7 @@ ScrollView {
 
 .top {
   height: 100vh;
-  padding: 150px 50px;
+  padding: 150px 0;
   background-size: cover;
 }
 
@@ -55,4 +55,25 @@ ScrollView {
 .top-button {
   border-radius: 5px;
   color: #ff56c9;
+}
+
+.wrap {
+  width: 90%;
+}
+
+.title {
+  width: 80%;
+}
+
+.about-cont {
+  margin: 150px 0;
+}
+
+.aboutDesc {
+  margin: 30px 0 70px 0;
+  font-size: 24;
+}
+
+.orderNum {
+  width: 50%;
 }
