@@ -82,18 +82,35 @@ TextField {
   background-color: #fff;
   height: 90px;
   border-radius: 10;
+  width: 60%;
 }
 
 .subscribe-button {
   border-radius: 10;
   background-color: #ff56c9;
   color: #fff;
+  padding: 15;
 }
 
 .logo {
-  width: 70;
+  width: 40;
 }
 
 .icon {
   height: 40;
+}
+
+.logo-title {
+  text-align: center;
+  margin: 80 0 30 0;
+}
+
+.shop-title {
+  font-size: 26;
+  margin-left: 10;
+  font-weight: bold;
+}
+
+.copy {
+  margin: 30 0;
 }

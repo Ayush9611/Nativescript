@@ -53,18 +53,32 @@
       </StackLayout>
       <StackLayout>
         <Image [src]="newsTitle"></Image>
-        <StackLayout class="subscribe">
+        <FlexboxLayout flexDirection="row" class="subscribe">
           <TextField></TextField>
           <Button text="Subscribe" class="subscribe-button"></Button>
-        </StackLayout>
+        </FlexboxLayout>
       </StackLayout>
       <StackLayout>
-        <Image [src]="logo" class="logo"></Image>
-        <label text="Fupecker"></label>
-        <Image [src]="twitter" class="icon"></Image>
-        <Image [src]="instagram" class="icon"></Image>
-        <Image [src]="facebook" class="icon"></Image>
-        <label text="© 2023 Fupecker All right reserved"></label>
+        <FlexboxLayout
+          flexDirection="row"
+          class="logo-title"
+          horizontalAlignment="center"
+          verticalAlignment="center"
+        >
+          <Image [src]="logo" class="logo"></Image>
+          <label text="Fupecker" class="shop-title"></label>
+        </FlexboxLayout>
+        <FlexboxLayout flexDirection="row" class="sns">
+          <Image [src]="twitter" class="icon"></Image>
+          <Image [src]="instagram" class="icon"></Image>
+          <Image [src]="facebook" class="icon"></Image>
+        </FlexboxLayout>
+        <label
+          horizontalAlignment="center"
+          verticalAlignment="center"
+          class="copy"
+          text="© 2023 Fupecker All right reserved"
+        ></label>
       </StackLayout>
     </StackLayout>
   </GridLayout>
