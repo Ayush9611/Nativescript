@@ -51,7 +51,21 @@
         ></label>
         <Image [src]="aboutImage"></Image>
       </StackLayout>
-      <StackLayout> </StackLayout>
+      <StackLayout>
+        <Image [src]="newsTitle"></Image>
+        <StackLayout class="subscribe">
+          <TextField></TextField>
+          <Button text="Subscribe" class="subscribe-button"></Button>
+        </StackLayout>
+      </StackLayout>
+      <StackLayout>
+        <Image [src]="logo" class="logo"></Image>
+        <label text="Fupecker"></label>
+        <Image [src]="twitter" class="icon"></Image>
+        <Image [src]="instagram" class="icon"></Image>
+        <Image [src]="facebook" class="icon"></Image>
+        <label text="© 2023 Fupecker All right reserved"></label>
+      </StackLayout>
     </StackLayout>
   </GridLayout>
 </ScrollView>
