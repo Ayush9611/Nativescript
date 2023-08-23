@@ -19,7 +19,7 @@
         <Button text="SHOP NOW" class="top-button"></Button>
       </StackLayout>
       <StackLayout>
-        <Image [src]="topText" class="topText"></Image>
+        <Image [src]="productTitle" class="topImg"></Image>
         <StackLayout
           *ngFor="let product of productList"
           class="productContainer"
@@ -41,6 +41,48 @@
           ></label>
         </StackLayout>
       </StackLayout>
+    </StackLayout>
+    <StackLayout>
+      <Image [src]="aboutTitle" class="topImg"></Image>
+      <label
+        text="Fupecker is an online sticker shop that combines your pet's photo with a template. You can always be with your pets by sticking them on your personal belongings such as mobile phones and computers!"
+        textWrap="true"
+        class="topDesc"
+      ></label>
+      <Image [src]="aboutImage"></Image>
+    </StackLayout>
+    <StackLayout>
+      <Image [src]="orderTitle" class="topImg"></Image>
+      <StackLayout>
+        <label text="Process"></label>
+        <Image [src]="orderNum1" class="topImg"></Image>
+        <label text="Choose a template"></label>
+        <label
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun"
+          textWrap="true"
+        ></label>
+      </StackLayout>
+      <StackLayout>
+        <label text="Process"></label>
+        <Image [src]="orderNum2" class="topImg"></Image>
+        <label text="Upload your pet's photo"></label>
+        <label
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun"
+          textWrap="true"
+        ></label>
+      </StackLayout>
+      <StackLayout>
+        <label text="Process"></label>
+        <Image [src]="orderNum3" class="topImg"></Image>
+        <label text="Confirm payment"></label>
+        <label
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun"
+          textWrap="true"
+        ></label>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout>
+      <Image [src]="orderNum3" class="topImg"></Image>
     </StackLayout>
   </GridLayout>
 </ScrollView>
