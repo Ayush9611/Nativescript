@@ -56,34 +56,6 @@ interface MobileImage {
           };
         };
       };
-      orderTitle: {
-        data: {
-          attributes: {
-            url: string;
-          };
-        };
-      };
-      orderNum1: {
-        data: {
-          attributes: {
-            url: string;
-          };
-        };
-      };
-      orderNum2: {
-        data: {
-          attributes: {
-            url: string;
-          };
-        };
-      };
-      orderNum3: {
-        data: {
-          attributes: {
-            url: string;
-          };
-        };
-      };
       newsTitle: {
         data: {
           attributes: {
@@ -137,10 +109,6 @@ export class ProductsComponent implements OnInit {
   productTitle: string = '';
   aboutTitle: string = '';
   aboutImage: string = '';
-  orderTitle: string = '';
-  orderNum1: string = '';
-  orderNum2: string = '';
-  orderNum3: string = '';
   newsTitle: string = '';
   logo: string = '';
   twitter: string = '';
@@ -190,10 +158,6 @@ export class ProductsComponent implements OnInit {
           res.data.attributes.productTitle.data.attributes.url;
         this.aboutTitle = res.data.attributes.aboutTitle.data.attributes.url;
         this.aboutImage = res.data.attributes.aboutImage.data.attributes.url;
-        this.orderTitle = res.data.attributes.orderTitle.data.attributes.url;
-        this.orderNum1 = res.data.attributes.orderNum1.data.attributes.url;
-        this.orderNum2 = res.data.attributes.orderNum2.data.attributes.url;
-        this.orderNum3 = res.data.attributes.orderNum3.data.attributes.url;
         this.newsTitle = res.data.attributes.newsTitle.data.attributes.url;
         this.logo = res.data.attributes.logo.data.attributes.url;
         this.twitter = res.data.attributes.twitter.data.attributes.url;
